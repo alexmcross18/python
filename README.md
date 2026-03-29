@@ -8,7 +8,7 @@ When a decoy asset in Zscaler Deception is triggered, the IOCs seen by that host
 
 ## Requirements
 
-Python 3 and the `requests` library:
+Python 3 and the `requests` library installed:
 
 ```
 pip install requests
@@ -19,16 +19,8 @@ pip install requests
 The API key is read from a Windows environment variable — it is never stored in the code.
 
 1. Sign up for a free account at https://www.abuseipdb.com/register
-2. Go to https://www.abuseipdb.com/account/api and copy your key
-3. Open Command Prompt and run:
-```
-setx AbuseIP "your-api-key-here"
-```
-4. Close the terminal and open a new one for the variable to take effect
-5. Verify it is set by running:
-```
-echo %AbuseIP%
-```
+2. Go to https://www.abuseipdb.com/account/api - Create and copy your key
+3. Create a new Environment Variable and call it "AbuseIP"
 
 ## Usage
 
@@ -73,12 +65,3 @@ Total Reports:     0
 - Duplicate IPs in the input CSV are deduplicated automatically — the API is only called once per unique IP.
 - The script pauses 1.5 seconds between API calls to stay within AbuseIPDB's free tier rate limit of 1000 requests per day.
 - A confidence score of 0 does not necessarily mean an IP is safe — newly provisioned attacker infrastructure may not have been reported yet. Any IP that contacted your decoy asset should be treated as suspicious regardless of score.
-
-## .gitignore
-
-Ensure your `.gitignore` includes the following so real IOC data is never committed to the repository:
-
-```
-*.csv
-enrichment.txt
-```
