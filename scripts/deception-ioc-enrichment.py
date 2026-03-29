@@ -10,12 +10,14 @@ import csv
 # time is part of Python's standard library - no installation needed
 import time
 
+# Import the os module so we can use the API key stored in the environment variable
+# os is part of Python's standard library - no installation needed
 import os
 
 
 # ── YOUR SETTINGS ─────────────────────────────────────────────────────────────
 
-# Your AbuseIPDB API key - regenerate this as it was exposed earlier
+# Your AbuseIPDB API key
 API_KEY = os.environ.get("AbuseIP")
 
 # The path to your CSV file
@@ -52,6 +54,7 @@ print(f"Found {len(ip_list)} unique IP addresses to look up")
 
 # ── STEP 2: LOOK UP EACH IP AND STORE THE RESULTS ────────────────────────────
 
+# Creates an empty list
 results = []
 
 for ip in ip_list:
@@ -65,8 +68,10 @@ for ip in ip_list:
     response = requests.get(url, headers=headers, params=params)
     data = response.json()["data"]
 
+    # Write the results to the list
     results.append(data)
 
+    # Wait 1.5 seconds between each loop
     time.sleep(1.5)
 
 # ── STEP 3: SORT BY CONFIDENCE SCORE - HIGHEST FIRST ─────────────────────────
@@ -75,7 +80,7 @@ results = sorted(results, key=lambda r: r.get("abuseConfidenceScore", 0), revers
 
 # ── STEP 4: WRITE SORTED RESULTS TO FILE ─────────────────────────────────────
 
-with open(OUTPUT_FILE, "w", encoding="utf-8") as outfile:
+with open(OUTPUT_FILE, "x", encoding="utf-8") as outfile:
 
     for data in results:
 
