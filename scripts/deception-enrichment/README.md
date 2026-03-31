@@ -19,7 +19,7 @@ the SOC for a threat hunt across the environment.
 
 | File            | Description                         |
 |-----------------|-------------------------------------|
-| enrich.py       | Main enrichment script              |
+| zs-deception-ip-enrichment.py       | Main enrichment script              |
 | alerts.csv      | Sample input file (IP addresses)    |
 | enrichment.txt  | Enriched output report              |
 
