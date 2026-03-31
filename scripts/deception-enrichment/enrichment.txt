@@ -1,0 +1,53 @@
+─────────────────────────────────
+IP Address:        89.248.167.131
+Confidence Score:  100 / 100
+Total Reports:     7583
+Country:           NL
+Usage Type:        Data Center/Web Hosting/Transit
+ISP:               FiberXpress BV
+Is Whitelisted:    False
+Last Reported:     2026-03-31T09:05:19+00:00
+
+⚠ FLAGGED - SCORE ABOVE 20
+─────────────────────────────────
+IP Address:        193.32.162.157
+Confidence Score:  100 / 100
+Total Reports:     22052
+Country:           RO
+Usage Type:        Data Center/Web Hosting/Transit
+ISP:               UNMANAGED LTD
+Is Whitelisted:    False
+Last Reported:     2026-03-29T18:42:15+00:00
+
+⚠ FLAGGED - SCORE ABOVE 20
+─────────────────────────────────
+IP Address:        185.220.101.45
+Confidence Score:  96 / 100
+Total Reports:     96
+Country:           DE
+Usage Type:        Fixed Line ISP
+ISP:               Network for Tor-Exit traffic.
+Is Whitelisted:    False
+Last Reported:     2026-03-28T03:15:16+00:00
+
+⚠ FLAGGED - SCORE ABOVE 20
+─────────────────────────────────
+IP Address:        198.199.119.161
+Confidence Score:  0 / 100
+Total Reports:     0
+Country:           US
+Usage Type:        Data Center/Web Hosting/Transit
+ISP:               DigitalOcean, LLC
+Is Whitelisted:    False
+Last Reported:     None
+
+─────────────────────────────────
+IP Address:        45.33.32.156
+Confidence Score:  0 / 100
+Total Reports:     1
+Country:           US
+Usage Type:        Data Center/Web Hosting/Transit
+ISP:               Linode
+Is Whitelisted:    False
+Last Reported:     2026-03-19T15:27:24+00:00
+
