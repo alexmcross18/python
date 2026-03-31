@@ -1,0 +1,8 @@
+TimeGenerated,AlertName,IPAddress,UserPrincipalName,Country,Severity
+2026-03-01T08:23:11Z,Sign-In From Unusual Location,185.220.101.45,john.smith@company.com,Russia,High
+2026-03-01T09:14:02Z,Sign-In From Unusual Location,45.33.32.156,sarah.jones@company.com,Netherlands,Medium
+2026-03-01T10:45:33Z,Brute Force Attempt,193.32.162.157,admin@company.com,China,High
+2026-03-01T11:02:55Z,Sign-In From Unusual Location,185.220.101.45,john.smith@company.com,Russia,High
+2026-03-01T13:17:44Z,Suspicious Login,89.248.167.131,mike.taylor@company.com,Ukraine,Medium
+2026-03-01T14:30:21Z,Brute Force Attempt,198.199.119.161,admin@company.com,United States,Low
+2026-03-01T15:55:09Z,Sign-In From Unusual Location,45.33.32.156,sarah.jones@company.com,Netherlands,Medium
