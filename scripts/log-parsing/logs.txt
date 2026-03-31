@@ -1,0 +1,20 @@
+2026-03-31 08:12:04 INFO 192.168.1.1 System startup complete
+2026-03-31 08:12:11 INFO 192.168.1.1 Network interface eth0 initialised
+2026-03-31 08:14:33 INFO 192.168.1.22 User admin logged in successfully
+2026-03-31 08:17:45 WARNING 192.168.1.45 High CPU usage detected on host web-server-01
+2026-03-31 08:21:09 ERROR 192.168.1.99 Failed login attempt from unknown user
+2026-03-31 08:21:12 ERROR 192.168.1.99 Failed login attempt from unknown user
+2026-03-31 08:21:15 ERROR 192.168.1.99 Failed login attempt from unknown user
+2026-03-31 08:23:01 WARNING 192.168.1.99 Account locked after multiple failed attempts
+2026-03-31 08:30:44 INFO 192.168.1.10 Scheduled backup started
+2026-03-31 08:45:22 INFO 192.168.1.10 Scheduled backup completed successfully
+2026-03-31 09:02:17 INFO 192.168.1.55 User jsmith logged in successfully
+2026-03-31 09:15:38 WARNING 192.168.1.55 Disk usage on /var reached 85 percent
+2026-03-31 09:44:02 ERROR 192.168.1.33 Database connection timeout on db-server-02
+2026-03-31 09:44:08 ERROR 192.168.1.33 Retrying database connection attempt 1 of 3
+2026-03-31 09:44:14 INFO 192.168.1.33 Database connection restored successfully
+2026-03-31 10:05:59 INFO 192.168.1.22 User admin logged out
+2026-03-31 10:11:27 WARNING 10.0.0.5 Firewall blocked inbound connection on port 22
+2026-03-31 10:11:29 WARNING 10.0.0.5 Firewall blocked inbound connection on port 22
+2026-03-31 10:33:14 ERROR 10.0.0.5 Port scan detected from external IP 203.0.113.45
+2026-03-31 10:33:15 INFO 192.168.1.1 IP 203.0.113.45 added to blocklist
