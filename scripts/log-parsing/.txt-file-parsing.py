@@ -38,6 +38,9 @@ for line in lines:
         parsed_logs.append(log_entries)
     except IndexError:
         print(f"Skipping missing/malformed line:  {line.strip()}")
+    except Exception:
+        # Catches anything unexpected (encoding issues, memory errors, etc.) without crashing the script
+        print(f"Skipping line due to unexpected error {line.strip()}")
 
 # Creates a new json file in write mode and adds the data from the "parsed_logs" list
 # Indents the json file 4 times per row of data to make it easier to read
