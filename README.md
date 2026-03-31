@@ -30,13 +30,12 @@ Folder: scripts/log-parsing/
 ## Structure
 
 Each script lives in its own folder and follows the same structure:
-
-   script-name/
-   ├── script.py        # main script
-   ├── README.md        # what it does, how to run it, real world context
-   └── sample files     # any input/output examples
-
----
+```
+script-name/
+├── script.py        # main script
+├── README.md        # what it does, how to run it, real world context
+└── sample files     # any input/output examples
+```
 
 ## Requirements
 
