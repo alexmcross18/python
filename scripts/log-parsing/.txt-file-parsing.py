@@ -8,7 +8,7 @@ from azure.identity import ClientSecretCredential
 parser = argparse.ArgumentParser(description="Parse a custom log .txt file into JSON format and ingest into Sentinel via DCE.")
 # Adds an input argument and makes it a requirement for the user to enter
 parser.add_argument("--input", required=True, help="Path to the input log .txt file")
-# Adds DCE arguments - all required as local file output has been removed
+# Adds DCE arguments - all required
 parser.add_argument("--dce", required=True, help="DCE endpoint URL")
 parser.add_argument("--dcr", required=True, help="DCR immutable ID")
 parser.add_argument("--stream", required=True, help="DCR stream name")
@@ -52,8 +52,7 @@ client_secret = os.environ.get("AZURE_CLIENT_SECRET")
 
 print(f"Parsed {len(parsed_logs)} records from {args.input}")
 
-# Authenticates to Azure using hardcoded service principal credentials - FOR TESTING ONLY
-# Replace with environment variables before pushing to repo
+# Authenticates to Azure using the service principal credentials
 credential = ClientSecretCredential(
     tenant_id=tenant_id,
     client_id=client_id,
@@ -75,5 +74,6 @@ headers = {
 # Posts the parsed logs to the DCE endpoint and raises an exception if it fails
 response = requests.post(url, headers=headers, json=parsed_logs)
 
+# Checks the HTTP status code and if it is a failure raises a HTTPError
 response.raise_for_status()
 print(f"Successfully posted {len(parsed_logs)} records to DCE")
